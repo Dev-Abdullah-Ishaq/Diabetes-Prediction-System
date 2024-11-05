@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <form action="resultmale.html" method="post">
+        Age:
+        <input type="number" name="Age"><br>
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        BMI:
+        <input type="number" name="bmi"> <br>
+
+        <label for="bloodPressure">Blood Pressure:</label>
+        <select name="bloodPressure" id="bloodPressure">
+            <option value="High">High</option>
+            <option value="Normal">Normal</option>
+            <option value="Low">Low</option>
+        </select><br>
+
+        FBS:
+        <input type="number" name="FBS"><br>
+
+        HbA1c:
+        <input type="number" name="HbA1c"><br>
+
+       
+
+        <label for="familyHistory">Family History of Diabetes</label>
+        <select name="familyHistory" id="familyHistory">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="smoking">Smoking</label>
+        <select name="smoking" id="smoking">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="diet">Diet</label>
+        <select name="diet" id="diet">
+            <option value="Healthy">Healthy</option>
+            <option value="Poor">Poor</option>
+        </select><br><br>
+
+        <label for="exercise">Exercise</label>
+        <select name="exercise" id="exercise">
+            <option value="Regular">Regular</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+        <!-- Add more options as needed -->
+    </form>
+    Result:{{resultmale}}
+</body>
+</html>
+ 

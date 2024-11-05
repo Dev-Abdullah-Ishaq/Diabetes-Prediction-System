@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction System</title>
+<style>
+body{
+    background-image: url("{{ url_for('static', filename='predictmalebg.jpg') }}");
+    background-size: cover;
+}
+
+
+
+        h1{
+           color: white;
+            font-family: arial, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 200px;
+            margin-left: 350px;
+        }
+        h2{
+            color:darkturquoise;
+            
+        }
+      
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 35px;
+            margin-left: 75px;
+        }
+
+
+
+
+</style>
+</head>
+<body>
+
+<h1>Welcome To The Diabetese Prediction System </h1> 
+
+<div align='center' class ="main">
+<h2>Please Enter Following Details:</h2>
+<form action="/resultmale" method="post">
+
+<table>
+   
+    
+    <tr>
+        <td align="center"><b><font color="white">Glucose:</font></b></td>
+        <td align="left"> <input type="text" name="nn1" required> </td>
+    </tr>
+    <tr>
+        <td align="center"><b><font color="white">Blood pressure:</font></b></td>
+        <td align="left"> <input type="text" name="nn2" required> </td>
+    </tr>
+    
+    <tr>
+        <td align="center"><b><font color="white">Skin Thickness:</font></b></td>
+        <td align="left"> <input type="text" name="nn3" required> </td>
+    </tr>
+    <tr>
+        <td align="center"><b><font color="white">Insulin:</font></b></td>
+        <td align="left"> <input type="text" name="nn4" required> </td>
+    </tr>
+    <tr>
+        <td align="center"><b><font color="white">BMI:</font></b></td>
+        <td align="left"> <input type="text" name="nn5" required> </td>
+    </tr>
+    
+    <tr>
+        <td align="center"><b><font color="white">Diabetese Pedigree Function:</font></b></td>
+        <td align="left"> <input type="text" name="nn6" required> </td>
+    </tr>
+    
+    <tr>
+        <td align="center"><b><font color="white">Age:</font></b></td>
+        <td align="left"> <input type="text" name="nn7" required> </td>
+    </tr>
+    
+
+
+</table>
+<input type="submit" value="Submit">
+</form>
+
+<br>
+<br>
+
+Result:{{resultmale}}
+
+</div>
+
+ 
+       
+ 
+
+
+</body>
+</html>
